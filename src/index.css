@@ -46,6 +46,11 @@ body {
   transition: all 0.3s linear;
 }
 
+ul,
+li {
+  list-style-type: none;
+}
+
 .section {
   width: 95vw;
   max-width: 1170px;
@@ -141,6 +146,10 @@ Posts
 ===============
 */
 
+.post-wrap:nth-of-type(5) {
+  margin-bottom: 5rem;
+}
+
 .posts {
   width: 90vw;
   max-width: 900px;
@@ -185,4 +194,75 @@ Posts
   .posts p {
     font-size: 1.2rem;
   }
+}
+
+/*
+=============== 
+Footer
+===============
+*/
+
+footer {
+  min-height: 10vh;
+  font-family: var(--fontFam);
+  background: #383838;
+}
+
+footer .section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 15vh;
+  padding: 1rem;
+}
+
+footer .footer-logo {
+  margin-right: 0.5rem;
+}
+
+.footer .footer-text {
+  margin-left: 1rem;
+}
+
+footer .links {
+  display: flex;
+  justify-content: space-between;
+  width: 100px;
+}
+
+footer .links .icons {
+  color: var(--clr-font);
+  font-size: 1rem;
+  transition: var(--trans);
+}
+
+footer .links .icons:hover {
+  color: var(--clr-bcg);
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  footer .section {
+    flex-direction: row;
+  }
+
+  footer .footer-logo {
+    font-size: 1.5rem;
+  }
+  footer .footer-text{
+    font-size: 1.5rem;
+  }
+
+  footer .links {
+    width: 150px;
+  }
+
+  footer .links .icons {
+    color: var(--clr-font);
+    font-size: 1.5rem;
+    transition: var(--trans);
+  }
+
+
 }

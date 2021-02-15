@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Article from "./components/Article";
+import Footer from "./components/Footer";
 import { posts } from "./data";
 
 const getStorageTheme = () => {
@@ -38,8 +39,13 @@ function App() {
         <Navbar toggleTheme={toggleTheme} toggle={toggle} />
       </header>
       {posts.map((item) => {
-        return <Article key={item.id} {...item} />;
+        return (
+          <section className="post-wrap">
+            <Article key={item.id} {...item} />
+          </section>
+        );
       })}
+      <Footer />
     </main>
   );
 }

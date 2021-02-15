@@ -1,6 +1,4 @@
 import {
-  IoFootball,
-  IoFootballSharp,
   IoLogoInstagram,
   IoLogoFacebook,
   IoLogoYoutube,
