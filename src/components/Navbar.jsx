@@ -1,14 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { IoFootball } from "react-icons/io5";
 import { BsToggleOff, BsToggleOn } from "react-icons/bs";
 
-const Navbar = () => {
+const Navbar = ({ toggle, toggleTheme }) => {
   return (
     <nav>
       <div className="nav-center section">
-        <IoFootball className="logo" />
-        <p>Navbar</p>
-        <button className="btn"></button>
+        <div className="logo-wrap">
+          <IoFootball className="logo" />
+          <span className="logo-text">Footy Blog</span>
+        </div>
+
+        <button className="btn" onClick={toggleTheme}>
+          {!toggle ? <BsToggleOn /> : <BsToggleOff />}
+        </button>
       </div>
     </nav>
   );
