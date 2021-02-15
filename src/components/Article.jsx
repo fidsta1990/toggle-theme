@@ -1,11 +1,8 @@
-import React from 'react'
+import React from "react";
+import { social, links } from "../data";
 
 const Article = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div></div>;
+};
 
-export default Article
+export default Article;
