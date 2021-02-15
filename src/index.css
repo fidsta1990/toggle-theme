@@ -9,7 +9,6 @@ Global Styles
   --clr-bcg: #f4f4f4e4;
   --clr-font: #43d2c2;
   --text: grey;
-  --clr-primary: #e67ff8;
   --trans: all 0.2s ease-in-out;
   --radius: 0.2rem;
   --fontFam: "Montserrat";
@@ -21,13 +20,11 @@ Global Styles
 .dark-theme {
   --clr-bcg: #43d2c2;
   --clr-font: #f4f4f4e4;
-  --clr-primary: #bf3cdd;
-  --text: grey;
+  --text: rgb(243, 206, 147);
 }
 .light-theme {
   --clr-bcg: #f4f4f4e4;
   --clr-font: #43d2c2;
-  --clr-primary: #e67ff8;
   --text: grey;
 }
 
@@ -167,6 +164,8 @@ Posts
 .posts p {
   color: var(--text);
   font-size: 0.8rem;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
 @media (min-width: 768px) {
@@ -184,6 +183,6 @@ Posts
   }
 
   .posts p {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }
