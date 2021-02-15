@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { IoFootball } from "react-icons/io5";
 import { BsToggleOff, BsToggleOn } from "react-icons/bs";
 
@@ -12,7 +12,11 @@ const Navbar = ({ toggle, toggleTheme }) => {
         </div>
 
         <button className="btn" onClick={toggleTheme}>
-          {!toggle ? <BsToggleOn /> : <BsToggleOff />}
+          {!toggle ? (
+            <BsToggleOn className="logo-clr" />
+          ) : (
+            <BsToggleOff className="logo-clr" />
+          )}
         </button>
       </div>
     </nav>

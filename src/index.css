@@ -73,7 +73,7 @@ Navbar
 }
 
 .logo {
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: var(--clr-font);
   border-radius: 50%;
   animation: footyLog infinite 3s;
@@ -81,10 +81,14 @@ Navbar
 }
 
 .logo-text {
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   margin-left: 0.5rem;
-  text-shadow: 0 0 2px rgba(0, 0, 0, 0.786);
   letter-spacing: var(--spacing);
+  font-weight: 500;
+}
+
+.logo-clr {
+  color: var(--clr-font);
 }
 
 @keyframes footyLog {
@@ -105,11 +109,24 @@ Navbar
 .btn {
   background: none;
   border: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   transition: var(--trans);
 }
 
-.btn:hover {
-  text-shadow: 0 0 10px green;
+.btn:active {
+  transform: scale(0.95);
+}
+
+@media (min-width: 768px) {
+  .logo {
+    font-size: 2rem;
+  }
+  .logo-text {
+    font-size: 1.8rem;
+  }
+
+  .btn {
+    font-size: 2rem;
+  }
 }
