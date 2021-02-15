@@ -10,6 +10,7 @@ const posts = [
   {
     id: 1,
     team: "Manchester United",
+    rival: "Leicester",
     score: "2-3",
     position: "4th",
     date: new Date(2020, 9, 2),
@@ -18,6 +19,7 @@ const posts = [
   {
     id: 2,
     team: "Tottenham",
+    rival: "Fulham",
     score: "1-4",
     position: "11th",
     date: new Date(2020, 9, 15),
@@ -26,6 +28,7 @@ const posts = [
   {
     id: 3,
     team: "Liverpool",
+    rival: "Arsenal",
     score: "3-3",
     position: "1st",
     date: new Date(2020, 10, 22),
@@ -34,6 +37,7 @@ const posts = [
   {
     id: 4,
     team: "Manchester City",
+    rival: "Chelsea",
     score: "3-5",
     position: "2nd",
     date: new Date(2020, 10, 28),
@@ -42,6 +46,7 @@ const posts = [
   {
     id: 5,
     team: "Everton",
+    rival: "Wolves",
     score: "1-1",
     position: "3rd",
     date: new Date(2020, 11, 9),
@@ -64,6 +69,4 @@ const social = [
   },
 ];
 
-const links = [{ logo: <IoFootball /> }, { logo: <IoFootballSharp /> }];
-
-export { posts, social, links };
+export { posts, social };

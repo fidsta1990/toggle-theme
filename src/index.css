@@ -8,6 +8,7 @@ Global Styles
 :root {
   --clr-bcg: #f4f4f4e4;
   --clr-font: #43d2c2;
+  --text: grey;
   --clr-primary: #e67ff8;
   --trans: all 0.2s ease-in-out;
   --radius: 0.2rem;
@@ -21,11 +22,13 @@ Global Styles
   --clr-bcg: #43d2c2;
   --clr-font: #f4f4f4e4;
   --clr-primary: #bf3cdd;
+  --text: grey;
 }
 .light-theme {
   --clr-bcg: #f4f4f4e4;
   --clr-font: #43d2c2;
   --clr-primary: #e67ff8;
+  --text: grey;
 }
 
 *,
@@ -47,7 +50,7 @@ body {
 }
 
 .section {
-  width: 100%;
+  width: 95vw;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -73,7 +76,7 @@ Navbar
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--clr-font);
   border-radius: 50%;
   animation: footyLog infinite 3s;
@@ -81,7 +84,7 @@ Navbar
 }
 
 .logo-text {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-left: 0.5rem;
   letter-spacing: var(--spacing);
   font-weight: 500;
@@ -119,14 +122,68 @@ Navbar
 }
 
 @media (min-width: 768px) {
+  .section {
+    width: 90vw;
+  }
+
   .logo {
-    font-size: 2rem;
+    font-size: 3.2rem;
   }
   .logo-text {
-    font-size: 1.8rem;
+    font-size: 2.4rem;
   }
 
   .btn {
+    font-size: 2.4rem;
+  }
+}
+
+/*
+=============== 
+Posts
+===============
+*/
+
+.posts {
+  width: 90vw;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 5rem 0 0.5rem;
+  font-family: var(--fontFam);
+}
+
+.posts h3 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+.posts h4 {
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+  margin: 0.5rem 0;
+  text-transform: capitalize;
+}
+
+.posts p {
+  color: var(--text);
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .posts {
+    width: 80vw;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .posts h3 {
+    font-size: 2.4rem;
+  }
+  .posts h4 {
     font-size: 2rem;
+  }
+
+  .posts p {
+    font-size: 1.6rem;
   }
 }
